@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'contenido/:id',
+    loadChildren: () => import('./contenido/contenido.module').then( m => m.ContenidoPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>contenido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">contenido</ion-title>
+    </ion-toolbar>
+  </ion-header>
+    <ion-card>
+      <img alt="Silhouette of mountains" src="{{personaje.image}}" />
+      <ion-card-header>
+        <ion-card-title>{{personaje.name}}</ion-card-title>
+        <ion-card-subtitle>{{personaje.gender}}</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content> {{personaje.species}} </ion-card-content>
+    </ion-card>
+</ion-content>
